@@ -9,4 +9,4 @@
 #### Ammar Daham
 #### Aatu Leppänen
 ### Asennusohjeet
-### Projektia kehitetään Eclipsellä, lisää projekti Maven-projektina (import->maven). Lisäksi tiedostoon ravintolaviisikreivia/src/main/resources/hibernate.cfg.xml pitää käydä lisäämässä käytetyn tietokannan ip ja ### kirjautumistiedot
+#### Projektia kehitetään Eclipsellä, lisää projekti Maven-projektina (import->maven). Lisäksi tiedostoon ravintolaviisikreivia/src/main/resources/hibernate.cfg.xml pitää käydä lisäämässä käytetyn tietokannan ip ja kirjautumistiedot
