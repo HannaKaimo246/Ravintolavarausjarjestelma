@@ -12,7 +12,7 @@ Ravintolavarausjärjestelmä, jossa asiakas voi varata pöydän nuorekkaasta rav
 + Ari Tenhunen
 + Sampo Vartiala
 + Ammar Daham
-+ Aatu Leppänen
-### Asennusohjeet
-#### Projektia kehitetään Eclipsellä, lisää projekti Maven-projektina (import->maven). Lisäksi tiedostoon ravintolaviisikreivia/src/main/resources/hibernate.cfg.xml pitää käydä lisäämässä käytetyn tietokannan ip ja kirjautumistiedot
++ Aatu Leppänen 
+Asennusohjeet
+Projektia kehitetään Eclipsellä, lisää projekti Maven-projektina (import->maven). Lisäksi tiedostoon ravintolaviisikreivia/src/main/resources/hibernate.cfg.xml pitää käydä lisäämässä käytetyn tietokannan ip ja kirjautumistiedot
 
