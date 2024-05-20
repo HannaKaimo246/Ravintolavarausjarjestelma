@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PalauteVastausController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="1.0" prefHeight="363.0" prefWidth="420.0" style="-fx-background-color: black; -fx-background-radius: 20px;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="440.0">
+               <children>
+                  <Label fx:id="numero" prefHeight="49.0" prefWidth="43.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="aihe" prefHeight="49.0" prefWidth="168.0" text="Aihe" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nimi" prefHeight="49.0" prefWidth="132.0" text="Nimi" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="tiedot" alignment="CENTER" mnemonicParsing="false" onAction="#avaaTiedot" prefHeight="35.0" prefWidth="61.0" style="-fx-background-color: #0171B7;" text="Tiedot" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox>
+               <children>
+                  <TextArea fx:id="teksti" editable="false" prefHeight="100.0" prefWidth="500.0" />
+                  <Pane prefHeight="55.0" prefWidth="500.0">
+                     <children>
+                        <Label fx:id="vastattu" layoutX="130.0" layoutY="14.0" text="Vastattu:" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="vastaaja" layoutX="251.0" layoutY="14.0" text="Ei ole" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <TextArea fx:id="vastaus" prefHeight="100.0" prefWidth="500.0" />
+                  <Pane fx:id="sisalto" prefHeight="27.0" prefWidth="500.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="vastausnappi" layoutX="-1.0" layoutY="1.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #0171B7;" text="Lähetä vastaus" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="kirjoitus" layoutX="215.0" layoutY="4.0" text="Kirjoitusta jäljellä:">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lukumaara" layoutX="379.0" layoutY="5.0" text="500">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

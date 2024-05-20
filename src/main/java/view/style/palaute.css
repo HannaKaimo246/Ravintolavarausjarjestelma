@@ -1,0 +1,47 @@
+.root {
+	-fx-background-color: #86aecc;
+	
+}
+
+
+.button {
+	-fx-background-color: #0171B7;
+	-fx-text-fill: white;
+}
+
+.button:hover {
+	-fx-background-color: #013F65;
+	-fx-text-fill: white;
+	
+}
+
+.lable:hover {
+	-fx-background-color: #013F65;
+	-fx-text-fill: white;
+}
+
+
+
+.etusivu-background {
+    -fx-background-image:url("../img/homepage.jpg") no-repeat;
+    -fx-background-size: cover;
+}
+
+.ruokalista-background {
+    -fx-background-image:url("../img/salad-2068220_1920.jpg") no-repeat;
+    -fx-background-size: cover;
+}
+
+.varaus-background {
+    -fx-background-image:url("../img/varaus.png") no-repeat;
+    -fx-background-size: cover;
+}
+
+.text {
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+
+
+
+
