@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" styleClass="text" stylesheets="@style/palaute.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VarausMuokkausController">
+   <top>
+      <HBox prefHeight="83.0" prefWidth="800.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="takaisin" alignment="CENTER" mnemonicParsing="false" onAction="#takaisin" prefHeight="40.0" prefWidth="100.0" text="%back">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="305.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="TOP_CENTER" prefHeight="248.0" prefWidth="700.0" styleClass=".text" stylesheets="@style/palaute.css">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="%date" textFill="#fffefe">
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="%start.time" textFill="WHITE" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="%end.time" textFill="WHITE" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="%number.of.people" textFill="WHITE" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="%additional.information" textFill="WHITE" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <DatePicker fx:id="dateID" prefHeight="26.0" prefWidth="152.0" promptText="%reservation.date" GridPane.columnIndex="1" />
+                  <TextArea fx:id="lisatiedot" prefHeight="45.0" prefWidth="347.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </TextArea>
+                  <ChoiceBox id="valikko" fx:id="henkilomaara" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <ChoiceBox fx:id="aloitusaika" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="lopetusaika" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="dateLabel" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="startLabel" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="endLabel" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="peopleLabel" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="100.0" right="100.0" />
+               </padding>
+            </GridPane>
+            <Button fx:id="editBtn" mnemonicParsing="false" onAction="#editBtnClicked" prefHeight="40.0" prefWidth="123.0" text="%modify">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="poyta" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PoytaController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+      <BorderPane fx:id="valikot" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <center>
+            <ImageView fx:id="kaanna" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@img/kaanna.png" />
+               </image>
+            </ImageView>
+         </center>
+         <left>
+            <ImageView fx:id="poisto" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@img/poista.png" />
+               </image>
+            </ImageView>
+         </left>
+         <right>
+            <ImageView fx:id="skaalaus" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@img/skaalaa.png" />
+               </image>
+            </ImageView>
+         </right>
+      </BorderPane>
+      <BorderPane layoutY="183.0" prefHeight="35.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <left>
+            <Text fx:id="poytatunnus" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="5.0" />
+               </BorderPane.margin>
+            </Text>
+         </left>
+         <right>
+            <Text fx:id="poytatyyppi" strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="5.0" />
+               </BorderPane.margin>
+            </Text>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

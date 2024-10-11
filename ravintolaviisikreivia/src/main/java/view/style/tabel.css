@@ -1,0 +1,38 @@
+
+.table-view .column-header
+ {   
+    -fx-stroke: transparent;
+    -fx-size:30;
+    -fx-alignment: CENTER ;    
+    -fx-text-alignment: center;
+    -fx-font-size: 14px;
+}
+
+.table-view .column-header-background{
+    -fx-background-radius: 8px 8px 0px 0px;
+}
+
+
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 30;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+    -fx-font-size: 14px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #0171B7;
+    -fx-text-background-color: white;
+}
